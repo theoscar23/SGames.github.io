@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100&family=Quicksand:wght@400;500;600&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto&display=swap');
 
 *{
     margin: 0;
@@ -10,7 +10,7 @@
 }
 
 body{
-    font-family: 'Quicksand', sans-serif;
+    font-family:'Quicksand',sans-serif ;
     background-color: #1B1726;
 }
 
@@ -18,15 +18,14 @@ img{
     max-width: 100%;
 }
 
-
 .container{
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .header{
-    background-image:url(Imagenes/bg.webp);
-    background-position: center center;
+    background-image: url(Imagenes/bg.webp);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -40,20 +39,18 @@ img{
     top: 0;
     left: 0;
     right: 0;
-    display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .logo{
     color: red;
-    font-weight: 800px;
-    font-size: 25px;
+    font-size: 25;
+    font-weight: 800;
     text-transform: uppercase;
 }
 
-
-.menu .navbar ul li{
+menu.navbar ul li {
     position: relative;
     float: left;
 }
@@ -66,7 +63,6 @@ img{
     display: block;
 }
 
-
 .menu .navbar ul li a:hover{
     color: red;
 }
@@ -75,8 +71,8 @@ img{
     display: none;
 }
 
-.menu_icono{
-    width: 1px;
+.menu-icono{
+    width: 25px;
 }
 
 .menu label{
@@ -85,13 +81,12 @@ img{
 }
 
 .header-content{
-    display: flex;
+    display: flex;   
 }
 
 .header-txt{
     flex-basis: 50%;
 }
-
 
 .header-txt h1{
     font-size: 60px;
@@ -101,13 +96,12 @@ img{
 }
 
 .header-txt span{
-color: red;
+    color: red;
 }
-
 
 .header-txt p{
     font-size: 17px;
-    color: white;
+    color: #E0E0E0;
     margin-bottom: 45px;
 }
 
@@ -117,16 +111,16 @@ color: red;
 
 .btn-1,.btn-2,.btn-3{
     display: inline-block;
-    padding: 11px 35px;
-    border: 2px solid red;
+    padding: 11px;
+    border:2px solid red;
     border-radius: 25px;
     margin-right: 25px;
     font-size: 17px;
-    color: white;
+    color:white;
 }
 
 .btn-1:hover{
-    color: red;
+    background-color: red;
 }
 
 .popular{
@@ -134,15 +128,15 @@ color: red;
     text-align: center;
 }
 
-h2{
+.h2{
     color: white;
     font-size: 35px;
     margin-bottom: 45px;
 }
 
 .popular-content{
-    display: flex;
-    justify-content: space-between; 
+    display:flex;
+    justify-content: space-between;
 }
 
 .popular-content img{
@@ -150,7 +144,7 @@ h2{
 }
 
 .product-content{
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(3,1fr);
     gap: 50px;
 }
@@ -160,7 +154,7 @@ h2{
 }
 
 .product-txt{
-    padding:  50px 30px;
+    padding: 50px 30px;
 }
 
 h3{
@@ -194,61 +188,59 @@ h3{
     background-color: #2A223A;
     text-align: center;
     padding: 50px;
-    border-radius: 50px;
+    border-radius: 50px;    
 }
 
 form{
-    display: flex;
+    display:flex ;
     justify-content: center;
     margin-top: 20px;
 }
 
 input{
     padding: 18px 25px;
-    background-color: #3f3456;
+    background-color: #3F3456;
     border: 0;
     border-radius: 25px;
     outline: none;
     margin-right: 10px;
-    color:white;
+    color: white;
     font-size: 17px;
 }
 
 ::placeholder{
-    color:white;
+    color: #E0E0E0;
     font-size: 17px;
 }
 
 .btn-3{
     background-color: red;
-    cursor: pointer;
+    color: pointer;
     margin-right: 0;
 }
-
 
 footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0;
+    padding: 50px 0 ;
 }
 
 .link ul{
     display:flex;
 }
 
-.link ul li > a{
+.link ul li >a{
     font-size: 17px;
     color: white;
     margin-right: 20px;
 }
 
-.link ul li > a:hover{   
+.link ul li >a:hover{
     color: red;
 }
 
-@media(max-width:791px){
-
+@media(max-width:991px){
     .menu{
         padding: 20px;
     }
@@ -259,24 +251,25 @@ footer{
 
     .menu .navbar{
         position: absolute;
-        top:100%;
-        left: 0;
+        top: 100%;
+        left:0;
         right: 0;
         background-color: red;
         display: none;
     }
 
     .menu .navbar ul li a:hover{
-        color:#1B1726;
+        color: #1B1726;
     }
 
-    .menu .navbar ul li {
+    .menu .navbar ul li{
         width: 100%;
     }
 
-    #menu:checked ~.navbar{
+    #menu:checked ~ .navbar{
         display: initial;
     }
+
     .header{
         min-height: 0vh;
         padding: 80px 30px 50px 30px;
@@ -284,7 +277,7 @@ footer{
 
     .header-txt{
         text-align: center;
-        flex-basis: 100%;
+        flex-basis: 50%;
     }
 
     .header-txt h1{
@@ -310,12 +303,12 @@ footer{
 
     .product-content{
         grid-template-columns: repeat(1,1fr);
-        gap:30px;
+        gap: 30px;
     }
 
     .product-1 img{
         width: 100%;
-    }ç
+    }
 
     .contact{
         padding: 30px;
@@ -326,16 +319,6 @@ footer{
     }
 
     input{
-        margin: 0 0 20px  0;
+        margin: 0 0 20px 0;
     }
-
-    .footer{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .link ul {
-        margin-top: 20px;
-    }
-
 }
