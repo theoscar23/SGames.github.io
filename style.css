@@ -129,25 +129,36 @@ menu.navbar ul li {
     text-align: center;
 }
 
-.h2{
+.popular-content h2{
     color: white;
-    font-size: 35px;
-    margin-bottom: 45px;
+    font-size: 20px;
+    /* margin-bottom: 45px; */
+    padding-left: 100px;
+ align-items: center;
 }
 
 .popular-content{
     display:flex;
     justify-content: space-between;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .popular-content img{
-    width: 150px;
+    width: 120px;
+    margin-top: 80px;
+    margin-right: auto;
+    align-items: center;
 }
 
 .product-content{
     display:grid;
     grid-template-columns: repeat(3,1fr);
     gap: 50px;
+}
+
+.product-container h2{
+    color: white;
 }
 
 .product-1{
