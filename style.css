@@ -133,15 +133,14 @@ menu.navbar ul li {
     color: white;
     font-size: 20px;
     /* margin-bottom: 45px; */
-    padding-left: 100px;
- align-items: center;
+    padding-left:150px;
 }
 
 .popular-content{
     display:flex;
     justify-content: space-between;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: -120px;
+    margin-bottom: 35px;
 }
 
 .popular-content img{
