@@ -213,33 +213,7 @@ h3{
     border-radius: 50px;    
 }
 
-form{
-    display:flex ;
-    justify-content: center;
-    margin-top: 20px;
-}
 
-input{
-    padding: 18px 25px;
-    background-color: #3F3456;
-    border: 0;
-    border-radius: 25px;
-    outline: none;
-    margin-right: 10px;
-    color: white;
-    font-size: 17px;
-}
-
-::placeholder{
-    color: #E0E0E0;
-    font-size: 17px;
-}
-
-.btn-3{
-    background-color: red;
-    color: pointer;
-    margin-right: 0;
-}
 
 footer{
     display: flex;
