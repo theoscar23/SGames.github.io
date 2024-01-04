@@ -58,7 +58,7 @@ img {
 }
 
 .menu .navbar ul li a:hover {
-    color: #E74C3C ;
+    color: red ;
 }
 
 /* Estilos del icono de menú y del menú desplegable */
@@ -101,7 +101,7 @@ img {
 .header-txt h1 {
     font-size: 50px;
     line-height: 1;
-    color: #E74C3C  ;
+    color: red;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 15px;
 }
@@ -153,7 +153,7 @@ p {
     font-size: 25px;
     line-height: 1;
     font-weight: 600;
-    color: #E74C3C ;
+    color: red;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
@@ -172,7 +172,7 @@ p {
 h2 {
     font-size: 35px;
     line-height: 1;
-    color: #E74C3C ;
+    color: red;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
 }
