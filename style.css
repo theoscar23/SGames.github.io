@@ -270,8 +270,8 @@ footer{
     /* Reglas de la cabecera */
     .header {
         min-height: 0vh;
-        /* padding: 80px 30px 50px 30px;
-        object-fit: contain; */
+        padding: 80px 30px 50px 30px;
+        object-fit: contain; 
     }
 
     .header-txt {
