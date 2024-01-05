@@ -38,20 +38,21 @@ function registrarUsuario() {
 
     // Mostrar mensaje de éxito
     alert('Registro exitoso. ¡Bienvenido, ' + nombre + '! Te has registrado como ' + usuario + '.');
-}
+    window.location.href = 'InicioSesion.html';
+}   
 
 function Login() {
         // Obtener los valores del formulario de inicio de sesión
-        var nombreUsuario = document.getElementById('nombreUsuarioLogin').value;
-        var contrasenna = document.getElementById('contrasenaLogin').value;
+        var Usuario = document.getElementById('Usuario').value;
+        var contrasenna = document.getElementById('contrasena').value;
     
         // Validar que los campos no estén vacíos
-        if (nombreUsuario === '' || contrasenna === '') {
+        if (Usuario === '' || contrasenna === '') {
             alert('Por favor, completa todos los campos.');
             return;
         }
     
-        if (nombreUsuario.length < 5) {
+        if (Usuario.length < 5) {
             alert('El nombre de usuario debe tener al menos 5 caracteres');
             return;
         }
@@ -66,6 +67,5 @@ function Login() {
         // Mostrar mensaje de éxito o redirigir al usuario.
         alert('Inicio de sesión exitoso. ¡Bienvenido, ' + nombreUsuario + '!');
         // También puedes redirigir al usuario a una página específica después del inicio de sesión.
-        window.location.href = 'index.html';  // Reemplaza 'dashboard.html' con tu página de destino.
-    
-}
+        window.location.href = 'index.html';  // Reemplaza 'index.html' con tu página de destino.
+    }
