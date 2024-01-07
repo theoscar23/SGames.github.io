@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand',sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(Imagenes/rise\ th\ tomb\ raider.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color:rgb(255, 160, 122);
+    font-size: 21px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 190px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    position: relative;
+    display: inline-block; /* Cambiado de float: left; */
+    margin-bottom: 190px;
+    margin-right: 30px;
+    font-size: 30px;
+}
+
+.menu ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: rgb(255, 160, 122);
+    font-weight: 600;
+    display: block;
+    text-decoration: none; /* Agregado para quitar subrayado predeterminado */
+}
+
+.menu ul li a:hover {
+    color: rgb(205, 92, 92);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    display: flex;   
+}
+
+.header-txt{
+    flex-basis: 50%;
+}
+
+.wrapper{
+    width: 420px;
+    background-color: rgba(192,219,232,0.2);
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(192,219,232,0.2);
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255,0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+
+.input-box input::placeholder{
+    color: white;
+}
+
+.input-box i{
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    transform: translateY();
+}
+
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+.remember-forgot label input{
+    accent-color: white;
+    margin-right: 3px;
+}
+
+
+.remember-forgot a{
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: rgba(192,219,232,0.2);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    color: white;
+}
+
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link a{
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    accent-color: white;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width:991px){
+    /* Reglas del menú */
+    .logo{
+        margin-left: -10px;
+    }
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+        margin-bottom: 190px;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color:rgba(174, 214, 241,0) ;
+        display: none;
+        margin-top: -50%;
+        align-items: center;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+        margin-bottom: -30%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+}
